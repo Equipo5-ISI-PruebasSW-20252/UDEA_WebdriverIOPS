@@ -23,7 +23,7 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        './features/**/login.feature'
+        './features/**/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -274,8 +274,9 @@ export const config = {
      * @param {number}                 result.duration  duration of scenario in milliseconds
      * @param {Object}                 context          Cucumber World object
      */
-    // afterScenario: function (world, result, context) {
-    // },
+    afterScenario: async function (world, result, context) {
+        await browser.reloadSession();
+    },
     /**
      *
      * Runs after a Cucumber Feature.

@@ -1,0 +1,50 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test results
+allure-results/
+allure-report/
+reports/
+screenshots/
+errorShots/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# WebdriverIO
+wdio-*.log
+chromedriver.log
+geckodriver.log
+
+# Build
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
